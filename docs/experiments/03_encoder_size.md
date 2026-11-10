@@ -4,8 +4,8 @@
 
 ## Goal
 
-Train DINOv2 with a larger backbone to compare encoder sizes in rae-cifar
-([experiment 06 there](https://github.com/shumpei-takezaki/rae-cifar/blob/main/docs/experiments/06_encoder_capacity.md)).
+Train DINOv2 with a larger backbone to compare encoder sizes in nanoRAE
+([experiment 06 there](https://github.com/shumpei-takezaki/nanoRAE/blob/main/docs/experiments/06_encoder_capacity.md)).
 
 ## Setup
 

@@ -4,7 +4,7 @@
 
 ## Goal
 
-[rae-cifar](https://github.com/shumpei-takezaki/rae-cifar) uses the teacher patch tokens as the latent of a representation
+[nanoRAE](https://github.com/shumpei-takezaki/nanoRAE) uses the teacher patch tokens as the latent of a representation
 autoencoder (RAE). Before choosing the encoder, we looked at the geometry of the patch tokens and checked for the high-norm
 artifact tokens that motivate registers in [Vision Transformers Need Registers](https://arxiv.org/abs/2309.16588).
 
@@ -29,4 +29,4 @@ one-off script (not included in the repository).
   position dominates. DINOv2 is spatially smoother and more coherent within an image, matching the patch PCA in [01](01_dino_vs_dinov2.md).
 - **Registers are not needed here.** Even without registers, the largest pre-LayerNorm norm is at most 1.8× the median, so
   there are no artifact tokens with extreme norms. The Reg4 register norms (about 1.3) are similar to that of CLS.
-  rae-cifar therefore uses DINOv2 without registers.
+  nanoRAE therefore uses DINOv2 without registers.

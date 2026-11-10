@@ -5,7 +5,7 @@
 ## Goal
 
 Compare DINO and DINOv2 trained from scratch on CIFAR-10 under identical conditions, with the representation quality of the
-patch tokens in mind (they are the latent of [rae-cifar](https://github.com/shumpei-takezaki/rae-cifar)).
+patch tokens in mind (they are the latent of [nanoRAE](https://github.com/shumpei-takezaki/nanoRAE)).
 
 ## Setup
 
@@ -73,7 +73,7 @@ Findings:
 
 ### Qualitative analysis
 
-Made with `python -m cifar_dino.analyze` (see the README).
+Made with `python -m nanodino.analyze` (see [training and evaluation](../training.md#qualitative-analysis)).
 
 ![t-SNE](../figures/01_dino_vs_dinov2/tsne.png)
 
@@ -99,5 +99,5 @@ Made with `python -m cifar_dino.analyze` (see the README).
 ```bash
 scripts/train_dino.sh; scripts/train_dinov2.sh; scripts/train_dinov2_reg4.sh   # outputs/<config>/
 scripts/eval_dino.sh; scripts/eval_dinov2.sh; scripts/eval_dinov2_reg4.sh
-uv run python -m cifar_dino.analyze outputs/{dino,dinov2,dinov2_reg4}/teacher_backbone.pt --out-dir outputs/analysis
+uv run python -m nanodino.analyze outputs/{dino,dinov2,dinov2_reg4}/teacher_backbone.pt --out-dir outputs/analysis
 ```

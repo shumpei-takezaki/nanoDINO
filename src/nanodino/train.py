@@ -1,7 +1,7 @@
 """DINO / DINOv2 self-supervised pretraining on CIFAR-10.
 
-    python -m cifar_dino.train --config configs/dinov2.yaml --output-dir outputs/dinov2
-    torchrun --nproc_per_node=2 -m cifar_dino.train --config configs/dino.yaml   # DDP; global batch unchanged
+    python -m nanodino.train --config configs/dinov2.yaml --output-dir outputs/dinov2
+    torchrun --nproc_per_node=2 -m nanodino.train --config configs/dino.yaml   # DDP; global batch unchanged
 
 DINO   = DINO CLS loss.
 DINOv2 = DINO CLS loss + iBOT masked-patch loss + KoLeo (method only differs in loss weights).

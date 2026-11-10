@@ -1,3 +1,6 @@
+# Adapted from DINOv2 (https://github.com/facebookresearch/dinov2, dinov2/data/masking.py and collate.py).
+# Copyright (c) Meta Platforms, Inc. and affiliates. Licensed under the Apache License, Version 2.0
+# (licenses/LICENSE-DINOv2.txt). Modified for this repository; see THIRD_PARTY_NOTICES.md.
 """iBOT block masking, ported from official DINOv2 (``dinov2/data/masking.py`` + ``collate.py``)."""
 
 import math

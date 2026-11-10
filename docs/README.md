@@ -9,4 +9,6 @@ Self-supervised pretraining of DINO and DINOv2 from scratch on CIFAR-10. One fil
 | 02 | [Patch tokens as a latent, and registers](experiments/02_patch_tokens_and_registers.md) | No high-norm artifact tokens without registers, so registers are not needed |
 | 03 | [Encoder size: ViT-Tiny/4 vs. ViT-S/4](experiments/03_encoder_size.md) | ViT-S is better (PatchMean kNN 87.04, linear 89.54) |
 
-**Coming soon:** DINOv2 ViT-B/4; more seeds; a linear-probe protocol with hyperparameters chosen on a validation split.
+Next steps: see the roadmap in the [README](../README.md).
+
+See also: [training and evaluation](training.md), [implementation notes](implementation.md).

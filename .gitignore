@@ -4,3 +4,4 @@ __pycache__/
 data/
 outputs/
 .env
+pretrained_models/
